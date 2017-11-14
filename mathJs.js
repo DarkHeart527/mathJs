@@ -4,8 +4,9 @@ mathJs = {
  },
  exp: function(num, exp) {
   var number;
+  var startNum = num;
   for (let i = 0; i < exp; i++) {
-   num = num * num;
+   num = num * startNum;
    number = num;
   }
   return number;
