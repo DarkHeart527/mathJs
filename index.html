@@ -9,7 +9,7 @@
     PEMDAS to the full extent in your scripts.</h2>
     <div class="CommandLine">
       <h4>Command Line</h4>
-      <input onkeyup="document.getElementById('submitCommand').onclick = 'document.getElementById('commandOutput').innerHTML = ' + this.value" type="text" />
+      <input onkeyup="document.getElementById('submitCommand').onclick = function() {document.getElementById('commandOutput').innerHTML =  this.value }" type="text" />
       <button id="submitCommand">Submit</button>
       <h4 id="commandOutput">No Output</h4>
     </div>
